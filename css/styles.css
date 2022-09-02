@@ -117,6 +117,8 @@ ul {
     line-height: 1.15;
     letter-spacing: 0.02em;
     text-decoration: none;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current::after {
@@ -168,6 +170,8 @@ ul {
     line-height: 1.15;
     letter-spacing: 0.02em;
     text-decoration: none;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-contact {
@@ -219,21 +223,26 @@ ul {
     color: var(--primary-white-color);
 }
 
-.hero-btn {
-    background: var(--primary-blue-color);
-    border-radius: 4px;
+.hero-btn {    
     font-weight: 700;
     font-size: 16px;
     line-height: 1.875;
-    color: var(--primary-white-color);
     letter-spacing: 0.06em;
+    padding: 10px 32px;
+
+    color: var(--primary-white-color);
+    background-color: var(--primary-blue-color);
+    border-radius: 4px;    
     border: none;
     cursor: pointer;
-    padding: 10px 32px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-btn:hover,
 .hero-btn:focus {
-    background: #188CE8;
+    background-color: #188CE8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
@@ -408,10 +417,13 @@ ul {
     align-items: center;
     justify-content: center;
 
+    background-color: var(--primary-white-color);
     color: var(--primary-icon-color);
     fill: currentColor;
-
     border-radius: 50%;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-team {
@@ -457,9 +469,12 @@ ul {
 
     color: var(--primary-icon-color);
     fill: currentColor;
-
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 .icon-logo {
@@ -468,7 +483,6 @@ ul {
 
 .customer-item:hover,
 .customer-item:focus {
-    background-color: var(--primary-white-color);
     border: 1px solid var(--primary-blue-color);
     border-radius: 4px;
     color: var(--primary-blue-color);
@@ -501,6 +515,8 @@ ul {
     color: rgba(255, 255, 255, 0.6);
     line-height: 1.7;
     font-style: normal;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .supp-footer {
@@ -567,8 +583,10 @@ ul {
     background-color: rgba(255, 255, 255, 0.1);
     color: var(--primary-white-color);
     fill: currentColor;
-
     border-radius: 50%;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-link-footer {
@@ -599,23 +617,29 @@ ul {
 
 .portfolio-btn{
     font-family: 'Roboto', sans-serif;
-    background: #F5F4FA;
-    border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 0.03em;
     line-height: 1.625;
 
-    color: var(--primary-black-color);
-
-    border: none;
-    cursor: pointer;
-
     padding: 6px 25px;
+
+    background-color: #F5F4FA;
+    color: var(--primary-black-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: none;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
-    background: var(--primary-blue-color);
+    background-color: var(--primary-blue-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     color: var(--primary-white-color);
@@ -648,9 +672,13 @@ ul {
     position: relative;
 
     display: block;
+    text-decoration: none;
+
     background-color: var(--primary-white-color);
     border: 1px solid #EEEEEE;
-    text-decoration: none;
+    box-shadow: none;
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-decor:hover .link-hover-text,
@@ -678,6 +706,8 @@ ul {
     background-color: rgba(33, 150, 243, 0.9);
 
     opacity: 0;
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-hover-text {
@@ -693,6 +723,8 @@ ul {
     color: var(--primary-white-color);
 
     opacity: 0;
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .port-list-title {
@@ -725,8 +757,6 @@ ul {
 
 .link-decor:hover,
 .link-decor:focus {
-    background-color: var(--primary-white-color);
-    border: 1px solid #EEEEEE;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
